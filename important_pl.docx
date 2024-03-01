@@ -1,0 +1,25 @@
+for i in range(len(inputan)):
+                query = '"' + inputan[i].strip().replace(".", "").replace('"', "'") + '"'
+                for j in range(len(list(search(query, tld=domain, num=10, stop=10, pause=2)))):
+                    if i != j:
+                        continue
+                    hasil_plagiarism.append(inputan[i])
+                    hasil_link.append(list(search(query, tld=domain, num=10, stop=10, pause=2))[j])
+            for i in range(len(hasil_plagiarism)):
+                for j in range(len(hasil_link)):
+                    if i != j:
+                        continue
+                    while True:
+                        for k in range(len(link_blocked)):
+                            if link_blocked[k] in hasil_link[j]:
+                                break
+                        else:
+                            hasil_plagiarism_final.append(hasil_plagiarism[i])
+                            hasil_link_final.append(hasil_link[j])
+                            break
+                        break
+            count = len(inputan)
+            count_hasil = len(hasil_link_final)
+            hasil_persen += (count_hasil / count) * 100
+            for i in range(len(hasil_link_final)):
+                link_output.append(hasil_link_final[i])
