@@ -9,6 +9,8 @@ There are 3 main files for you:
 ```bash
 python check_plagiarism.py
 ```
+![CMD Screenshot](https://github.com/wavesoumen/Plagiarism-Checker/blob/main/Pictures/pl2.png)
+
 3. The API for it [plagiarism_api.py](https://github.com/wavesoumen/Plagiarism-Checker/blob/main/plagiarism_api.py), uses:
 Install uvicorn for run api:
 ```bash
@@ -18,6 +20,7 @@ Run the api:
 ```bash
 uvicorn plagiarism_api:app --reload
 ```
+
 ## Speciality of this function:
 There are 3 parts of the python script.
 Some features of the function are:
