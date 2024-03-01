@@ -20,6 +20,8 @@ Run the api:
 ```bash
 uvicorn plagiarism_api:app --reload
 ```
+![Running](https://github.com/wavesoumen/Plagiarism-Checker/blob/main/Pictures/plagiarism1.png)
+![Result](https://github.com/wavesoumen/Plagiarism-Checker/blob/main/Pictures/plagiarism2.png)
 
 ## Speciality of this function:
 There are 3 parts of the python script.
@@ -27,6 +29,6 @@ Some features of the function are:
 - It shows the _percentages_ of the input text passage.
 - It shows that which sentences & words are plagiarized.
 - Displays the *Source Links* of the plagiarism.
-
+![CMD Screenshot](https://github.com/wavesoumen/Plagiarism-Checker/blob/main/Pictures/pl1.png)
 # 
 ## -Soumen Kayal.
